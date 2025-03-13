@@ -161,6 +161,8 @@ void MainImpl::initializeStatsConfig(const envoy::config::bootstrap::v3::Bootstr
 
     stats_config_->addSink(factory.createStatsSink(*message, server.serverFactoryContext()));
   }
+  ENVOY_LOG(info, "loaded stats configuration");
+
 }
 
 void MainImpl::initializeTracers(const envoy::config::trace::v3::Tracing& configuration,
