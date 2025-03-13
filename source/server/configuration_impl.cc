@@ -165,6 +165,7 @@ MainImpl::initializeStatsConfig(const envoy::config::bootstrap::v3::Bootstrap& b
     RETURN_IF_NOT_OK_REF(sink.status());
     stats_config_->addSink(std::move(sink.value()));
   }
+  ENVOY_LOG(info, "loaded stats configuration");
   return absl::OkStatus();
 }
 

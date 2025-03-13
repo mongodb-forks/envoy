@@ -103,6 +103,7 @@ envoy_cc_library(
         "//source/common/http:utility_lib",
         "//source/common/json:json_loader_lib",
         "//source/common/json:json_utility_lib",
+        "//source/common/network:proxy_protocol_filter_state_lib",
         "//source/common/protobuf:message_validator_lib",
         "//source/common/stream_info:utility_lib",
     ],
